@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostit extends Migration
+class CreateGroup extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreatePostit extends Migration
      */
     public function up()
     {
-      Schema::create('postit', function (Blueprint $table) {
-          $table->string('título');
-          $table->text('descrição');
-          $table->string('imagem');
-          $table->boolean('flag');
+      Schema::create('group', function (Blueprint $table) {
+          $table->string('name');
+          $table->string('color');
           $table->timestamp('created_at')->nullable();
       });
     }
