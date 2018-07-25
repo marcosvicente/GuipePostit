@@ -1,5 +1,4 @@
 <?php
-use Test;
 namespace Tests\Feature;
 
 use Tests\TestCase;
